@@ -1,0 +1,35 @@
+openapi: 3.0.1
+info:
+  title: decrypter-api
+  description: defaultDescription
+  version: '1.0'
+servers:
+  - url: https://twbo8b5p12.execute-api.us-east-2.amazonaws.com
+paths:
+  /stage1/password/6af3223cba2c81d5f61d433fe621ca2daa8ac8b3:
+    get:
+      description: Auto generated using Swagger Inspector
+      responses:
+        '200':
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  body:
+                    type: object
+                    properties:
+                      6af3223cba2c81d5f61d433fe621ca2daa8ac8b3:
+                        type: string
+                  statusCode:
+                    type: integer
+              examples:
+                '0':
+                  value: >-
+                    {"statusCode": 200, "body":
+                    {"6af3223cba2c81d5f61d433fe621ca2daa8ac8b3": "gb3"}}
+      servers:
+        - url: https://twbo8b5p12.execute-api.us-east-2.amazonaws.com
+    servers:
+      - url: https://twbo8b5p12.execute-api.us-east-2.amazonaws.com

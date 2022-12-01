@@ -1,0 +1,30 @@
+---
+swagger: "2.0"
+info:
+  version: "2022-12-01T07:51:46Z"
+  title: "decrypt"
+host: "twbo8b5p12.execute-api.us-east-2.amazonaws.com"
+basePath: "/stage1"
+schemes:
+- "https"
+paths:
+  /password/{shahash}:
+    get:
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "shahash"
+        in: "path"
+        required: true
+        type: "string"
+      responses:
+        "200":
+          description: "200 response"
+          schema:
+            $ref: "#/definitions/Empty"
+definitions:
+  Empty:
+    type: "object"
+    title: "Empty Schema"
